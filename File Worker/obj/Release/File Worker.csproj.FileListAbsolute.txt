@@ -1,0 +1,25 @@
+C:\Users\artyo\Desktop\File Worker\File Worker\bin\Release\WinSCP.exe
+C:\Users\artyo\Desktop\File Worker\File Worker\bin\Release\File Worker.exe.config
+C:\Users\artyo\Desktop\File Worker\File Worker\bin\Release\File Worker.exe
+C:\Users\artyo\Desktop\File Worker\File Worker\bin\Release\File Worker.pdb
+C:\Users\artyo\Desktop\File Worker\File Worker\bin\Release\Rebex.Common.dll
+C:\Users\artyo\Desktop\File Worker\File Worker\bin\Release\Rebex.Ftp.dll
+C:\Users\artyo\Desktop\File Worker\File Worker\bin\Release\Rebex.Networking.dll
+C:\Users\artyo\Desktop\File Worker\File Worker\bin\Release\WinSCPnet.dll
+C:\Users\artyo\Desktop\File Worker\File Worker\bin\Release\Rebex.Common.xml
+C:\Users\artyo\Desktop\File Worker\File Worker\bin\Release\Rebex.Ftp.xml
+C:\Users\artyo\Desktop\File Worker\File Worker\bin\Release\Rebex.Networking.xml
+C:\Users\artyo\Desktop\File Worker\File Worker\obj\Release\FileWorker.ButtonForm.resources
+C:\Users\artyo\Desktop\File Worker\File Worker\obj\Release\FileWorker.ChangeExp.resources
+C:\Users\artyo\Desktop\File Worker\File Worker\obj\Release\FileWorker.FtpAddProf.resources
+C:\Users\artyo\Desktop\File Worker\File Worker\obj\Release\FileWorker.Reference.resources
+C:\Users\artyo\Desktop\File Worker\File Worker\obj\Release\FileWorker.RenameForm.resources
+C:\Users\artyo\Desktop\File Worker\File Worker\obj\Release\FileWorker.Properties.Resources.resources
+C:\Users\artyo\Desktop\File Worker\File Worker\obj\Release\FileWorker.ReservCopy.resources
+C:\Users\artyo\Desktop\File Worker\File Worker\obj\Release\FileWorker.SearchError.resources
+C:\Users\artyo\Desktop\File Worker\File Worker\obj\Release\FileWorker.SetupForm.resources
+C:\Users\artyo\Desktop\File Worker\File Worker\obj\Release\File Worker.csproj.GenerateResource.cache
+C:\Users\artyo\Desktop\File Worker\File Worker\obj\Release\File Worker.csproj.CoreCompileInputs.cache
+C:\Users\artyo\Desktop\File Worker\File Worker\obj\Release\File Worker.csproj.CopyComplete
+C:\Users\artyo\Desktop\File Worker\File Worker\obj\Release\File Worker.exe
+C:\Users\artyo\Desktop\File Worker\File Worker\obj\Release\File Worker.pdb

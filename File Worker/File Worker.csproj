@@ -1,0 +1,285 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{FF09F898-C5F5-46C6-88C8-F3E67433B1EB}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>FileWorker</RootNamespace>
+    <AssemblyName>File Worker</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ProductName>File Worker</ProductName>
+    <PublisherName>Artyom Emelin</PublisherName>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>IconFW.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="Rebex.Common, Version=5.0.7733.0, Culture=neutral, PublicKeyToken=1c4638788972655d, processorArchitecture=MSIL">
+      <HintPath>..\packages\Rebex.Common.5.0.7733\lib\net46\Rebex.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Rebex.Ftp, Version=5.0.7733.0, Culture=neutral, PublicKeyToken=1c4638788972655d, processorArchitecture=MSIL">
+      <HintPath>..\packages\Rebex.Ftp.5.0.7733\lib\net46\Rebex.Ftp.dll</HintPath>
+    </Reference>
+    <Reference Include="Rebex.Networking, Version=5.0.7733.0, Culture=neutral, PublicKeyToken=1c4638788972655d, processorArchitecture=MSIL">
+      <HintPath>..\packages\Rebex.Networking.5.0.7733\lib\net46\Rebex.Networking.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="WindowsFormsIntegration" />
+    <Reference Include="WinSCPnet, Version=1.7.2.11087, Culture=neutral, PublicKeyToken=2271ec4a3c56d0bf, processorArchitecture=MSIL">
+      <HintPath>..\packages\WinSCP.5.17.10\lib\net40\WinSCPnet.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ButtonForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ButtonForm.Designer.cs">
+      <DependentUpon>ButtonForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChangeExp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChangeExp.Designer.cs">
+      <DependentUpon>ChangeExp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FtpAddProf.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FtpAddProf.Designer.cs">
+      <DependentUpon>FtpAddProf.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Reference.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reference.Designer.cs">
+      <DependentUpon>Reference.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RenameForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RenameForm.Designer.cs">
+      <DependentUpon>RenameForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReservCopy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReservCopy.Designer.cs">
+      <DependentUpon>ReservCopy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SearchError.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchError.Designer.cs">
+      <DependentUpon>SearchError.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SetupForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SetupForm.Designer.cs">
+      <DependentUpon>SetupForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ButtonForm.resx">
+      <DependentUpon>ButtonForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChangeExp.resx">
+      <DependentUpon>ChangeExp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FtpAddProf.resx">
+      <DependentUpon>FtpAddProf.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reference.resx">
+      <DependentUpon>Reference.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RenameForm.resx">
+      <DependentUpon>RenameForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReservCopy.resx">
+      <DependentUpon>ReservCopy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchError.resx">
+      <DependentUpon>SearchError.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SetupForm.resx">
+      <DependentUpon>SetupForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Resources\Руководство пользователя File Worker.chm" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dark_close.png" />
+    <None Include="Resources\dark_back_move.png" />
+    <None Include="Resources\dark_back.png" />
+    <None Include="Resources\dark_web_move.png" />
+    <None Include="Resources\dark_web.png" />
+    <None Include="Resources\dark_min_move.png" />
+    <None Include="Resources\dark_min.png" />
+    <None Include="Resources\dark_close_move.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dark_setup.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dark_setup_move.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dark_true.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dark_false.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\white_true.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\white_false.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\white_close_move.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\white_min.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\white_min_move.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\white_setings.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\white_settings_move.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\white_web.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\white_web_move.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\white_back.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\white_back_move.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\white_close.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\скрыто_black.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\скрыто_white.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\показать_black.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\показать_white.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Banner.jpg" />
+    <Content Include="IconFW.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Logs\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 и x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="..\packages\WinSCP.5.17.10\build\WinSCP.targets" Condition="Exists('..\packages\WinSCP.5.17.10\build\WinSCP.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Данный проект ссылается на пакеты NuGet, отсутствующие на этом компьютере. Используйте восстановление пакетов NuGet, чтобы скачать их.  Дополнительную информацию см. по адресу: http://go.microsoft.com/fwlink/?LinkID=322105. Отсутствует следующий файл: {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\WinSCP.5.17.10\build\WinSCP.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\WinSCP.5.17.10\build\WinSCP.targets'))" />
+  </Target>
+</Project>

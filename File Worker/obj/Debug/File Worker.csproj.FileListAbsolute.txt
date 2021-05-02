@@ -1,0 +1,25 @@
+C:\Users\artyo\Desktop\File Worker\File Worker\bin\Debug\WinSCP.exe
+C:\Users\artyo\Desktop\File Worker\File Worker\bin\Debug\Rebex.Common.dll
+C:\Users\artyo\Desktop\File Worker\File Worker\bin\Debug\Rebex.Ftp.dll
+C:\Users\artyo\Desktop\File Worker\File Worker\bin\Debug\Rebex.Networking.dll
+C:\Users\artyo\Desktop\File Worker\File Worker\bin\Debug\WinSCPnet.dll
+C:\Users\artyo\Desktop\File Worker\File Worker\bin\Debug\Rebex.Common.xml
+C:\Users\artyo\Desktop\File Worker\File Worker\bin\Debug\Rebex.Ftp.xml
+C:\Users\artyo\Desktop\File Worker\File Worker\bin\Debug\Rebex.Networking.xml
+C:\Users\artyo\Desktop\File Worker\File Worker\obj\Debug\File Worker.csproj.GenerateResource.cache
+C:\Users\artyo\Desktop\File Worker\File Worker\obj\Debug\File Worker.csproj.CoreCompileInputs.cache
+C:\Users\artyo\Desktop\File Worker\File Worker\obj\Debug\File Worker.csproj.CopyComplete
+C:\Users\artyo\Desktop\File Worker\File Worker\obj\Debug\FileWorker.Properties.Resources.resources
+C:\Users\artyo\Desktop\File Worker\File Worker\bin\Debug\File Worker.exe.config
+C:\Users\artyo\Desktop\File Worker\File Worker\bin\Debug\File Worker.exe
+C:\Users\artyo\Desktop\File Worker\File Worker\bin\Debug\File Worker.pdb
+C:\Users\artyo\Desktop\File Worker\File Worker\obj\Debug\FileWorker.ButtonForm.resources
+C:\Users\artyo\Desktop\File Worker\File Worker\obj\Debug\FileWorker.ChangeExp.resources
+C:\Users\artyo\Desktop\File Worker\File Worker\obj\Debug\FileWorker.FtpAddProf.resources
+C:\Users\artyo\Desktop\File Worker\File Worker\obj\Debug\FileWorker.Reference.resources
+C:\Users\artyo\Desktop\File Worker\File Worker\obj\Debug\FileWorker.RenameForm.resources
+C:\Users\artyo\Desktop\File Worker\File Worker\obj\Debug\FileWorker.ReservCopy.resources
+C:\Users\artyo\Desktop\File Worker\File Worker\obj\Debug\FileWorker.SearchError.resources
+C:\Users\artyo\Desktop\File Worker\File Worker\obj\Debug\FileWorker.SetupForm.resources
+C:\Users\artyo\Desktop\File Worker\File Worker\obj\Debug\File Worker.exe
+C:\Users\artyo\Desktop\File Worker\File Worker\obj\Debug\File Worker.pdb
