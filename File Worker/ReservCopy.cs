@@ -676,6 +676,7 @@ namespace FileWorker
                         throw;
                     }
                 }
+                MessageBox.Show("Резервное копирование выполнено", "Успешно", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
     }

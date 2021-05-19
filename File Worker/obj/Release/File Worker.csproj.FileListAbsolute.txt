@@ -23,3 +23,4 @@ C:\Users\artyo\Desktop\File Worker\File Worker\obj\Release\File Worker.csproj.Co
 C:\Users\artyo\Desktop\File Worker\File Worker\obj\Release\File Worker.csproj.CopyComplete
 C:\Users\artyo\Desktop\File Worker\File Worker\obj\Release\File Worker.exe
 C:\Users\artyo\Desktop\File Worker\File Worker\obj\Release\File Worker.pdb
+C:\Users\artyo\Desktop\File Worker\File Worker\obj\Release\File Worker.csprojAssemblyReference.cache

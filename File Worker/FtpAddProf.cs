@@ -40,8 +40,7 @@ namespace FileWorker
                     ftpReq(Properties.Settings.Default.ftp1, Properties.Settings.Default.ftpName1, Properties.Settings.Default.ftpPass1);
                 }
             }
-
-            if (Properties.Settings.Default.ftp2true == false)
+            else if (Properties.Settings.Default.ftp2true == false)
             {
                 Properties.Settings.Default.ftp2true = true;
                 Properties.Settings.Default.ftp2 = textBox1.Text;
@@ -56,8 +55,7 @@ namespace FileWorker
                     ftpReq(Properties.Settings.Default.ftp2, Properties.Settings.Default.ftpName2, Properties.Settings.Default.ftpPass2);
                 }
             }
-
-            if (Properties.Settings.Default.ftp3true == false)
+            else if (Properties.Settings.Default.ftp3true == false)
             {
                 Properties.Settings.Default.ftp3true = true;
                 Properties.Settings.Default.ftp3 = textBox1.Text;
