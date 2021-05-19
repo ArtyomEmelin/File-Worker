@@ -188,18 +188,18 @@ namespace FileWorker
 
         private void pictureBox4_Click(object sender, EventArgs e)
         {
-            //SetupForm setupForm = new SetupForm();
-            //setupForm.Show();
-            if (Properties.Settings.Default.SetupFormAct == false)
-            {
-                SetupForm setupForm = new SetupForm();
-                setupForm.Show();
-            }
-            else if (Properties.Settings.Default.SetupFormAct == true)
-            {
-                SetupForm setupForm = new SetupForm();
-                setupForm.Focus();
-            }
+            SetupForm setupForm = new SetupForm();
+            setupForm.Show();
+            //if (Properties.Settings.Default.SetupFormAct == false)
+            //{
+            //    SetupForm setupForm = new SetupForm();
+            //    setupForm.Show();
+            //}
+            //else if (Properties.Settings.Default.SetupFormAct == true)
+            //{
+            //    SetupForm setupForm = new SetupForm();
+            //    setupForm.Focus();
+            //}
         }
 
         public void DarkThemeTrue()

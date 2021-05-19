@@ -510,17 +510,17 @@ namespace FileWorker
                 button2.Enabled = true;
                 if (comboBox1.Enabled == true)
                 {
-                    if (Properties.Settings.Default.ftp1true == true)
+                    if (Properties.Settings.Default.ftp1 != "")
                     {
                         string ftp1 = "Профиль №1 " + Properties.Settings.Default.ftpName1.ToString() + " " + Properties.Settings.Default.ftp1.ToString();
                         comboBox1.Items.Add(ftp1);
                     }
-                    if (Properties.Settings.Default.ftp2true == true)
+                    if (Properties.Settings.Default.ftp2 != "")
                     {
                         string ftp2 = "Профиль №2 " + Properties.Settings.Default.ftpName2.ToString() + " " + Properties.Settings.Default.ftp2.ToString();
                         comboBox1.Items.Add(ftp2);
                     }
-                    if (Properties.Settings.Default.ftp3true == true)
+                    if (Properties.Settings.Default.ftp3 != "")
                     {
                         string ftp3 = "Профиль №3 " + Properties.Settings.Default.ftpName3.ToString() + " " + Properties.Settings.Default.ftp3.ToString();
                         comboBox1.Items.Add(ftp3);
@@ -555,21 +555,21 @@ namespace FileWorker
             if (FTPprofile == "Профиль №1 ")
             {
                 label3.Text = Properties.Settings.Default.ftp1 + "/File Worker Reserv";
-                ftpCheckFiles(Properties.Settings.Default.ftp1, Properties.Settings.Default.ftpName1, Properties.Settings.Default.ftpPass1);
+                ftpCheckFiles(Properties.Settings.Default.ftp1, Properties.Settings.Default.ftpName1, Properties.Settings.Default.ftpPass1, true);
             }
             else if (FTPprofile == "Профиль №2 ")
             {
                 label3.Text = Properties.Settings.Default.ftp2 + "/File Worker Reserv";
-                ftpCheckFiles(Properties.Settings.Default.ftp2, Properties.Settings.Default.ftpName2, Properties.Settings.Default.ftpPass2);
+                ftpCheckFiles(Properties.Settings.Default.ftp2, Properties.Settings.Default.ftpName2, Properties.Settings.Default.ftpPass2, true);
             }
             else if (FTPprofile == "Профиль №3 ")
             {
                 label3.Text = Properties.Settings.Default.ftp3 + "/File Worker Reserv";
-                ftpCheckFiles(Properties.Settings.Default.ftp3, Properties.Settings.Default.ftpName3, Properties.Settings.Default.ftpPass3);
+                ftpCheckFiles(Properties.Settings.Default.ftp3, Properties.Settings.Default.ftpName3, Properties.Settings.Default.ftpPass3, true);
             }
         }
 
-        private void ftpCheckFiles(string url, string username, string password)
+        private void ftpCheckFiles(string url, string username, string password, bool mess)
         {
             try
             {
@@ -593,7 +593,39 @@ namespace FileWorker
                     MessageBox.Show("В папке уже умеются файлы!" + "\r" + "Записать файлы?", "Предупреждение", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
 
-                for (int i = 0; i < directories.Count - 1; i++)
+                for (int i = 0; i < directories.Count; i++)
+                {
+                    listBox1.Items.Add(directories[i]);
+                }
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show(e.Message, e.Source, MessageBoxButtons.OK, MessageBoxIcon.Error);
+                throw;
+            }
+        }
+
+        private void ftpCheckFiles(string url, string username, string password)
+        {
+            try
+            {
+                FtpWebRequest ftpRequest = (FtpWebRequest)WebRequest.Create(url + "/File%20Worker%20Reserv");
+                ftpRequest.Credentials = new NetworkCredential(username, password);
+                ftpRequest.Method = WebRequestMethods.Ftp.ListDirectory;
+                FtpWebResponse response = (FtpWebResponse)ftpRequest.GetResponse();
+                StreamReader streamReader = new StreamReader(response.GetResponseStream());
+
+                List<string> directories = new List<string>();
+
+                string line = streamReader.ReadLine();
+                while (!string.IsNullOrEmpty(line))
+                {
+                    directories.Add(line);
+                    line = streamReader.ReadLine();
+                }
+                streamReader.Close();
+
+                for (int i = 0; i < directories.Count; i++)
                 {
                     listBox1.Items.Add(directories[i]);
                 }
@@ -677,6 +709,7 @@ namespace FileWorker
                     }
                 }
                 MessageBox.Show("Резервное копирование выполнено", "Успешно", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                ftpCheckFiles(url, username, password);
             }
         }
     }

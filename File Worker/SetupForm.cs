@@ -56,11 +56,11 @@ namespace FileWorker
         {
             if (Properties.Settings.Default.darkTheme == true)
             {
-                pictureBox1.BackgroundImage = FileWorker.Properties.Resources.dark_close_move;
+                pictureBox1.BackgroundImage = Properties.Resources.dark_close_move;
             }
             else
             {
-                pictureBox1.BackgroundImage = FileWorker.Properties.Resources.white_close_move;
+                pictureBox1.BackgroundImage = Properties.Resources.white_close_move;
             }
         }
 
@@ -68,11 +68,11 @@ namespace FileWorker
         {
             if (Properties.Settings.Default.darkTheme == true)
             {
-                pictureBox2.BackgroundImage = FileWorker.Properties.Resources.dark_min_move;
+                pictureBox2.BackgroundImage = Properties.Resources.dark_min_move;
             }
             else
             {
-                pictureBox2.BackgroundImage = FileWorker.Properties.Resources.white_min_move;
+                pictureBox2.BackgroundImage = Properties.Resources.white_min_move;
             }
         }
 
@@ -80,11 +80,11 @@ namespace FileWorker
         {
             if (Properties.Settings.Default.darkTheme == true)
             {
-                pictureBox2.BackgroundImage = FileWorker.Properties.Resources.dark_min;
+                pictureBox2.BackgroundImage = Properties.Resources.dark_min;
             }
             else
             {
-                pictureBox2.BackgroundImage = FileWorker.Properties.Resources.white_min;
+                pictureBox2.BackgroundImage = Properties.Resources.white_min;
             }
         }
 
@@ -92,17 +92,17 @@ namespace FileWorker
         {
             if (Properties.Settings.Default.darkTheme == true)
             {
-                pictureBox1.BackgroundImage = FileWorker.Properties.Resources.dark_close;
+                pictureBox1.BackgroundImage = Properties.Resources.dark_close;
             }
             else
             {
-                pictureBox1.BackgroundImage = FileWorker.Properties.Resources.white_close;
+                pictureBox1.BackgroundImage = Properties.Resources.white_close;
             }
         }
 
         private void pictureBox3_Click(object sender, EventArgs e)
         {
-            if (FileWorker.Properties.Settings.Default.darkTheme == false)
+            if (Properties.Settings.Default.darkTheme == false)
             {
                 Properties.Settings.Default.darkTheme = true;
                 Properties.Settings.Default.Save();
@@ -138,7 +138,7 @@ namespace FileWorker
             label9.ForeColor = Color.Black;
             pictureBox1.BackgroundImage = Properties.Resources.white_close;
             pictureBox2.BackgroundImage = Properties.Resources.white_min;
-            pictureBox3.BackgroundImage = FileWorker.Properties.Resources.white_false;
+            pictureBox3.BackgroundImage = Properties.Resources.white_false;
             darkThemeDo = false;
         }
 
@@ -178,6 +178,25 @@ namespace FileWorker
         {
             Properties.Settings.Default.SetupFormAct = false;
             Properties.Settings.Default.Save();
+        }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Properties.Settings.Default.darkTheme = false;
+            Properties.Settings.Default.ftp1 = "";
+            Properties.Settings.Default.ftpName1 = "";
+            Properties.Settings.Default.ftpPass1 = "";
+            Properties.Settings.Default.ftp2 = "";
+            Properties.Settings.Default.ftpName2 = "";
+            Properties.Settings.Default.ftpPass2 = "";
+            Properties.Settings.Default.ftp3 = "";
+            Properties.Settings.Default.ftpName3 = "";
+            Properties.Settings.Default.ftpPass3 = "";
+            Properties.Settings.Default.FtpAddProfAct = false;
+            Properties.Settings.Default.SetupFormAct = false;
+            pictureBox3.BackgroundImage = Properties.Resources.dark_true;
+            Properties.Settings.Default.Save();
+            darkThemeDo = true;
         }
     }
 }

@@ -73,18 +73,6 @@ namespace FileWorker.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("False")]
-        public bool ftp1true {
-            get {
-                return ((bool)(this["ftp1true"]));
-            }
-            set {
-                this["ftp1true"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("NULL")]
         public string ftp2 {
             get {
@@ -116,18 +104,6 @@ namespace FileWorker.Properties {
             }
             set {
                 this["ftpPass2"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("False")]
-        public bool ftp2true {
-            get {
-                return ((bool)(this["ftp2true"]));
-            }
-            set {
-                this["ftp2true"] = value;
             }
         }
         
@@ -170,12 +146,12 @@ namespace FileWorker.Properties {
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("False")]
-        public bool ftp3true {
+        public bool SetupFormAct {
             get {
-                return ((bool)(this["ftp3true"]));
+                return ((bool)(this["SetupFormAct"]));
             }
             set {
-                this["ftp3true"] = value;
+                this["SetupFormAct"] = value;
             }
         }
         
@@ -188,42 +164,6 @@ namespace FileWorker.Properties {
             }
             set {
                 this["FtpAddProfAct"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("False")]
-        public bool SetupFormAct {
-            get {
-                return ((bool)(this["SetupFormAct"]));
-            }
-            set {
-                this["SetupFormAct"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("NULL")]
-        public string resCopyPathWithFiles {
-            get {
-                return ((string)(this["resCopyPathWithFiles"]));
-            }
-            set {
-                this["resCopyPathWithFiles"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("NULL")]
-        public string resCopyPathForCopy {
-            get {
-                return ((string)(this["resCopyPathForCopy"]));
-            }
-            set {
-                this["resCopyPathForCopy"] = value;
             }
         }
     }

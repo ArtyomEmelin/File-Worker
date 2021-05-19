@@ -1,5 +1,5 @@
 ﻿<?xml version='1.0' encoding='utf-8'?>
-<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Diplom.Properties" GeneratedClassName="Settings">
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="FileWorker.Properties" GeneratedClassName="Settings">
   <Profiles />
   <Settings>
     <Setting Name="darkTheme" Type="System.Boolean" Scope="User">
@@ -14,9 +14,6 @@
     <Setting Name="ftpPass1" Type="System.String" Scope="User">
       <Value Profile="(Default)">NULL</Value>
     </Setting>
-    <Setting Name="ftp1true" Type="System.Boolean" Scope="User">
-      <Value Profile="(Default)">False</Value>
-    </Setting>
     <Setting Name="ftp2" Type="System.String" Scope="User">
       <Value Profile="(Default)">NULL</Value>
     </Setting>
@@ -25,9 +22,6 @@
     </Setting>
     <Setting Name="ftpPass2" Type="System.String" Scope="User">
       <Value Profile="(Default)">NULL</Value>
-    </Setting>
-    <Setting Name="ftp2true" Type="System.Boolean" Scope="User">
-      <Value Profile="(Default)">False</Value>
     </Setting>
     <Setting Name="ftp3" Type="System.String" Scope="User">
       <Value Profile="(Default)">NULL</Value>
@@ -38,20 +32,11 @@
     <Setting Name="ftpPass3" Type="System.String" Scope="User">
       <Value Profile="(Default)">NULL</Value>
     </Setting>
-    <Setting Name="ftp3true" Type="System.Boolean" Scope="User">
+    <Setting Name="SetupFormAct" Type="System.Boolean" Scope="User">
       <Value Profile="(Default)">False</Value>
     </Setting>
     <Setting Name="FtpAddProfAct" Type="System.Boolean" Scope="User">
       <Value Profile="(Default)">False</Value>
-    </Setting>
-    <Setting Name="SetupFormAct" Type="System.Boolean" Scope="User">
-      <Value Profile="(Default)">False</Value>
-    </Setting>
-    <Setting Name="resCopyPathWithFiles" Type="System.String" Scope="User">
-      <Value Profile="(Default)">NULL</Value>
-    </Setting>
-    <Setting Name="resCopyPathForCopy" Type="System.String" Scope="User">
-      <Value Profile="(Default)">NULL</Value>
     </Setting>
   </Settings>
 </SettingsFile>

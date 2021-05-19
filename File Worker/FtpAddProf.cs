@@ -25,14 +25,13 @@ namespace FileWorker
 
         private void choosePath_button_Click(object sender, EventArgs e)
         {
-            if (Properties.Settings.Default.ftp1true == false)
+            if (Properties.Settings.Default.ftp1 == "")
             {
-                Properties.Settings.Default.ftp1true = true;
                 Properties.Settings.Default.ftp1 = textBox1.Text;
                 Properties.Settings.Default.ftpName1 = textBox2.Text;
                 Properties.Settings.Default.ftpPass1 = textBox3.Text;
                 Properties.Settings.Default.Save();
-                if (Properties.Settings.Default.ftp1true == true)
+                if (Properties.Settings.Default.ftp1 != "")
                 {
                     string ftp1 = "Профиль №1 " + Properties.Settings.Default.ftpName1.ToString() + " " + Properties.Settings.Default.ftp1.ToString();
                     comboBox1.Items.Add(ftp1);
@@ -40,14 +39,13 @@ namespace FileWorker
                     ftpReq(Properties.Settings.Default.ftp1, Properties.Settings.Default.ftpName1, Properties.Settings.Default.ftpPass1);
                 }
             }
-            else if (Properties.Settings.Default.ftp2true == false)
+            else if (Properties.Settings.Default.ftp2 == "")
             {
-                Properties.Settings.Default.ftp2true = true;
                 Properties.Settings.Default.ftp2 = textBox1.Text;
                 Properties.Settings.Default.ftpName2 = textBox2.Text;
                 Properties.Settings.Default.ftpPass2 = textBox3.Text;
                 Properties.Settings.Default.Save();
-                if (Properties.Settings.Default.ftp2true == true)
+                if (Properties.Settings.Default.ftp2 != "")
                 {
                     string ftp2 = "Профиль №2 " + Properties.Settings.Default.ftpName2.ToString() + " " + Properties.Settings.Default.ftp2.ToString();
                     comboBox1.Items.Add(ftp2);
@@ -55,14 +53,13 @@ namespace FileWorker
                     ftpReq(Properties.Settings.Default.ftp2, Properties.Settings.Default.ftpName2, Properties.Settings.Default.ftpPass2);
                 }
             }
-            else if (Properties.Settings.Default.ftp3true == false)
+            else if (Properties.Settings.Default.ftp3 == "")
             {
-                Properties.Settings.Default.ftp3true = true;
                 Properties.Settings.Default.ftp3 = textBox1.Text;
                 Properties.Settings.Default.ftpName3 = textBox2.Text;
                 Properties.Settings.Default.ftpPass3 = textBox3.Text;
                 Properties.Settings.Default.Save();
-                if (Properties.Settings.Default.ftp3true == true)
+                if (Properties.Settings.Default.ftp3 != "")
                 {
                     string ftp3 = "Профиль №3 " + Properties.Settings.Default.ftpName3.ToString() + " " + Properties.Settings.Default.ftp3.ToString();
                     comboBox1.Items.Add(ftp3);
@@ -131,17 +128,17 @@ namespace FileWorker
 
         private void FtpAddProf_Load(object sender, EventArgs e)
         {
-            if (Properties.Settings.Default.ftp1true == true)
+            if (Properties.Settings.Default.ftp1 != "")
             {
                 string ftp1 = "Профиль №1 " + Properties.Settings.Default.ftpName1.ToString() + " " + Properties.Settings.Default.ftp1.ToString();
                 comboBox1.Items.Add(ftp1);
             }
-            if (Properties.Settings.Default.ftp2true == true)
+            if (Properties.Settings.Default.ftp2 != "")
             {
                 string ftp2 = "Профиль №2 " + Properties.Settings.Default.ftpName2.ToString() + " " + Properties.Settings.Default.ftp2.ToString();
                 comboBox1.Items.Add(ftp2);
             }
-            if (Properties.Settings.Default.ftp3true == true)
+            if (Properties.Settings.Default.ftp3 != "")
             {
                 string ftp3 = "Профиль №3 " + Properties.Settings.Default.ftpName3.ToString() + " " + Properties.Settings.Default.ftp3.ToString();
                 comboBox1.Items.Add(ftp3);
@@ -151,7 +148,7 @@ namespace FileWorker
                 comboBox1.SelectedIndex = 0;
             }
 
-            if (Properties.Settings.Default.ftp1true == true && Properties.Settings.Default.ftp2true == true && Properties.Settings.Default.ftp3true == true)
+            if (Properties.Settings.Default.ftp1 != "" && Properties.Settings.Default.ftp2 != "" && Properties.Settings.Default.ftp3 != "")
             {
                 addFtp_button.Enabled = false;
             }
@@ -171,7 +168,6 @@ namespace FileWorker
                 result = MessageBox.Show("Вы уверены что хотите удалить" + "\r" + comboBox1.SelectedItem.ToString(), "Предупреждение", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
                 if (result == DialogResult.Yes)
                 {
-                    Properties.Settings.Default.ftp1true = false;
                     Properties.Settings.Default.ftp1 = null;
                     Properties.Settings.Default.ftpName1 = null;
                     Properties.Settings.Default.ftpPass1 = null;
@@ -186,14 +182,12 @@ namespace FileWorker
                 }
             }
 
-
             if (prof == "Профиль №2 ")
             {
                 DialogResult result = new DialogResult();
                 result = MessageBox.Show("Вы уверены что хотите удалить" + "\r" + comboBox1.SelectedItem.ToString(), "Предупреждение", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
                 if (result == DialogResult.Yes)
                 {
-                    Properties.Settings.Default.ftp2true = false;
                     Properties.Settings.Default.ftp2 = null;
                     Properties.Settings.Default.ftpName2 = null;
                     Properties.Settings.Default.ftpPass2 = null;
@@ -214,7 +208,6 @@ namespace FileWorker
                 result = MessageBox.Show("Вы уверены что хотите удалить" + "\r" + comboBox1.SelectedItem.ToString(), "Предупреждение", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
                 if (result == DialogResult.Yes)
                 {
-                    Properties.Settings.Default.ftp3true = false;
                     Properties.Settings.Default.ftp3 = null;
                     Properties.Settings.Default.ftpName3 = null;
                     Properties.Settings.Default.ftpPass3 = null;
@@ -229,7 +222,7 @@ namespace FileWorker
                 }
             }
 
-            if (Properties.Settings.Default.ftp1true == false | Properties.Settings.Default.ftp2true == false | Properties.Settings.Default.ftp3true == false)
+            if (Properties.Settings.Default.ftp1 == null | Properties.Settings.Default.ftp2 == null | Properties.Settings.Default.ftp3 == null)
             {
                 addFtp_button.Enabled = true;
             }
