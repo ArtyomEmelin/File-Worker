@@ -63,6 +63,16 @@ namespace FileWorker.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Banner {
+            get {
+                object obj = ResourceManager.GetObject("Banner", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap dark_back {
             get {
                 object obj = ResourceManager.GetObject("dark_back", resourceCulture);
@@ -177,6 +187,16 @@ namespace FileWorker.Properties {
             get {
                 object obj = ResourceManager.GetObject("dark_web_move", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Icon, аналогичного (Значок).
+        /// </summary>
+        internal static System.Drawing.Icon IconFW {
+            get {
+                object obj = ResourceManager.GetObject("IconFW", resourceCulture);
+                return ((System.Drawing.Icon)(obj));
             }
         }
         

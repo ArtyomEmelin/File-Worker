@@ -258,6 +258,8 @@
   <ItemGroup>
     <Content Include="Banner.jpg" />
     <Content Include="IconFW.ico" />
+    <None Include="Resources\Banner.jpg" />
+    <None Include="Resources\IconFW.ico" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Logs\" />
