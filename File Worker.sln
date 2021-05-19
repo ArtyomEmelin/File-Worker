@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.30621.155
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "File Worker", "File Worker\File Worker.csproj", "{FF09F898-C5F5-46C6-88C8-F3E67433B1EB}"
 EndProject
-Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "File Worker Installer", "File Worker Installer\File Worker Installer.vdproj", "{0CFBB22B-B1A4-42B8-9D3E-4BCAE8EFFBE9}"
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "File Worker Installer", "File Worker Installer\File Worker Installer.vdproj", "{A23CDFBB-F21B-49CB-A056-5AC1A4B97735}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,8 +17,8 @@ Global
 		{FF09F898-C5F5-46C6-88C8-F3E67433B1EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FF09F898-C5F5-46C6-88C8-F3E67433B1EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FF09F898-C5F5-46C6-88C8-F3E67433B1EB}.Release|Any CPU.Build.0 = Release|Any CPU
-		{0CFBB22B-B1A4-42B8-9D3E-4BCAE8EFFBE9}.Debug|Any CPU.ActiveCfg = Debug
-		{0CFBB22B-B1A4-42B8-9D3E-4BCAE8EFFBE9}.Release|Any CPU.ActiveCfg = Release
+		{A23CDFBB-F21B-49CB-A056-5AC1A4B97735}.Debug|Any CPU.ActiveCfg = Debug
+		{A23CDFBB-F21B-49CB-A056-5AC1A4B97735}.Release|Any CPU.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
